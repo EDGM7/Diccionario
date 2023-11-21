@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" id="themeStylesheet">
+    <title>Diccionario Web</title>
+</head>
+
+<body>
+    <header>
+        <h1>Diccionario Web</h1>
+    </header>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="#instructions">Instrucciones</a></li>
+            <li><a href="#search">Diccionario</a></li>
+            <li><a href="#tools">Herramientas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="appearance-controls">
+            <label for="themeToggle">Claro:</label>
+            <input type="checkbox" id="themeToggle">
+        
+            <label for="fontSelect">Tipografía:</label>
+            <select id="fontSelect">
+                <option value="Arial, sans-serif">Arial</option>
+                <option value="'Times New Roman', serif">Times New Roman</option>
+                <option value="'Courier New', monospace">Courier New</option>
+                <option value="'Comic Sans MS', cursive">Comic Sans MS</option>
+                <option value="'Verdana', sans-serif">Verdana</option>
+            </select>
+        </div> </br>
+
+ 
+    <section id="instructions">
+        <h2>Instrucciones para usar el diccionario</h2>
+        <ol>
+            <li>Para que la consulta funcione correctamente, ingrese solo palabras en inglés, ya que dicho diccionario fue creado para ese idioma.</li>
+            <li>Después de ingresar la palabra y hacer clic en el botón de Buscar, espere unos segundos, en algunos casos puede tardar y dependerá de la velocidad de su conexión a Internet.</li>
+            <li>Se proporciona un botón para limpiar las consultas y realizar búsquedas nuevas.</li>
+        </ol>          
+    
+
+    </section>
+
+<section id="search">
+        <div class="search-container">
+             <input type="text" id="searchInput" placeholder="Buscar una palabra...">
+            <button id="searchButton" aria-label="Buscar palabras en el diccionario">Buscar</button>
+            <button id="clearButton" aria-label="limpiar">Limpiar Búsqueda</button>
+        </div>
+        <div id="resultsContainer"></div>
+</section>
+
+<section id="tools">
+    <h2>Herramientas Utilizadas</h2>
+    <div class="tools-buttons">
+        <a href="https://html.com/" target="_blank" class="tool-button">HTML</a>
+        <a href="https://www.javascript.com/" target="_blank" class="tool-button">JavaScript</a>
+        <a href="https://lenguajecss.com/css/introduccion/que-es-css/" target="_blank" class="tool-button">CSS</a>
+        <a href="https://dictionaryapi.dev/" target="_blank" class="tool-button">API Dictionary</a>
+    </div>
+</section>
+
+
+        
+    </main>
+
+    <footer>
+        <p>API utilizada <a href="https://dictionaryapi.dev/" target="_blank">dictionaryapi.dev</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+   
+
